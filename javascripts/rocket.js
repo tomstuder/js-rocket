@@ -1,5 +1,5 @@
 // rocket.js
 
 var boom = function () {
-   alert('BOOOOOOOOM!!!');
+   document.getElementById('normal').className = 'awesome boom';
 }

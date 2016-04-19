@@ -322,3 +322,21 @@ footer {
     color:#444;
   }
 }
+
+.awesome {
+  color: #e2e2e2;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1em;
+  transition: background-color 2s;
+}
+
+.awesome.boom {
+  background-color: #e2e2e2;
+  padding: 1em;
+  color: #000000;
+  font-weight: bold;
+  line-height: 1.5em;
+  border-radius: 10px;
+}
+
