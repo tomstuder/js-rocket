@@ -1,5 +1,12 @@
 // rocket.js
 
 var boom = function () {
-   document.getElementById('normal').className = 'awesome boom';
+  // change class name
+  var currentClassName = document.getElementById('normal').className;
+
+  if (currentClassName == 'awesome') {
+       document.getElementById('normal').className = 'awesome boom'; 
+  } else {
+       document.getElementById('normal').className = 'awesome';
+  }
 }
