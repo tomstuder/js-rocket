@@ -386,7 +386,12 @@ footer {
   position: absolute;
   bottom: 25px;
   margin-left: 50%;
-  background-color: #126673;
+  background-image: url("../img/rocket.png");
+  transition: bottom 1.2s;
+}
+
+.rocket.launch {
+  bottom: 800px;
 }
 
 a.button {

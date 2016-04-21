@@ -13,5 +13,13 @@ var boom = function () {
 
 
 var launch = function () {
-  document.getElementById('rocket').className = 'launch go'; 
+  document.getElementById('rocket').className = 'rocket launch';
+}
+
+var relaunch = function () {
+  console.log('relaunch rocket')
+}
+
+var abortlaunch = function () {
+  console.log('abort launch')
 }
