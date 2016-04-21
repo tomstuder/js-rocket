@@ -10,3 +10,8 @@ var boom = function () {
        document.getElementById('normal').className = 'awesome';
   }
 }
+
+
+var launch = function () {
+  document.getElementById('rocket').className = 'launch go'; 
+}

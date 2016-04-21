@@ -345,3 +345,46 @@ footer {
   transform: rotate(7deg);
 }
 
+/* ROCKET */
+.left {
+  width: 50%;
+  display: block;
+  background-color: #e2e2e2;
+  float: left;
+  height: 100%;
+
+
+}
+.right {
+  display: block;
+  width: 50%;
+  background-color: gray;
+  float: left;
+  min-height: 100%;
+
+}
+.ground {
+    background-color: #126673;
+    position: absolute;
+    bottom:0;
+    display: block;
+    margin-bottom: 0;
+    left: 0;
+    height: 20px;
+}
+.rocket {
+  width: 50px;
+  height: 125px;
+  background-color: #126673;
+}
+
+.button {
+  background-color: red;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+
+
