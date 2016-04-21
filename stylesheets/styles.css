@@ -346,13 +346,19 @@ footer {
 }
 
 /* ROCKET */
+
+.left, .right {
+  box-sizing: border-box;
+}
+
 .left {
   width: 50%;
   display: block;
-  background-color: #e2e2e2;
+/*  background-color: #e2e2e2;*/
   float: left;
   height: 55vh;
-
+  border-left: 1px solid #e2e2e2;
+  padding-left: 20px;
 
 }
 .right {
@@ -383,12 +389,19 @@ footer {
   background-color: #126673;
 }
 
+a.button {
+  font-size: .75em;
+}
+
 .button {
   background-color: red;
   color: #ffffff;
   padding: 10px;
   border-radius: 5px;
+}
 
+.phase2,.phase3,.phase4,.phase5 {
+  display: none;
 }
 
 

@@ -31,8 +31,29 @@
           <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ROCKET LAUNCH</h3>
 
           <div class="left">
-            <p>Ready for Launch</p>
-            <a href="#" class="button" onclick="launch()">LAUNCH</a>
+            <div class="phase1">
+              <p>Ready for Launch</p>
+              <a href="#" class="button" onclick="launch()">LAUNCH</a>
+            </div>
+            <div class="phase2">
+              <p>Timer <<span class="timer" id="timer">10</span></p>
+              <a href="#" class="button" onclick="abortlaunch()">ABORT LAUNCH!</a>
+            </div>
+            <div class="phase3">
+              <p>Success!</p>
+              <a href="#" class="button" onclick="relaunch()">RE-LAUNCH</a>
+            </div>
+            <div class="phase4">
+              <p>ABORT</p>
+              <a href="#" class="button" onclick="abortlaunch()">ABORT LAUNCH</a>
+            </div>
+            <div class="phase5">
+              <p>ERROR! LAUNCH FAILURE</p>
+              <a href="#" class="button" onclick="relaunch()">RE-LAUNCH</a>
+            </div>
+
+
+
           </div>
           <div class="right">
 
