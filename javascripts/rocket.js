@@ -11,15 +11,22 @@ var boom = function () {
   }
 }
 
+// ROCKET LAUNCH PAGE --------------------------------------------
 
+
+// Launch Rocket
 var launch = function () {
   document.getElementById('rocket').className = 'rocket launch';
+  document.getElementById('test').style.display = 'block';
+  document.getElementById('test').style.backgroundColor = 'red';
 }
 
+// Reset the Rocket Launch
 var relaunch = function () {
   console.log('relaunch rocket')
 }
 
+// Stop the Rocket Launch
 var abortlaunch = function () {
   console.log('abort launch')
 }
