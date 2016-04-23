@@ -364,14 +364,14 @@ footer {
 .right {
   display: block;
   width: 50%;
-  background-color: #000000;
+  background: url("../img/space.jpg") no-repeat 0 0;
   float: left;
   height: 55vh;
   position: relative;
 
 }
 .ground {
-     background-image: url("../img/ground.png");
+     background: url("../img/ground.png") no-repeat 0 0;
     position: absolute;
     bottom:0;
     display: block;
@@ -387,7 +387,7 @@ footer {
   position: absolute;
   bottom: 25px;
   margin-left: 45%;
-  background-image: url("../img/rocket.png");
+  background: url("../img/rocket.png") no-repeat 0 0;
   transition: bottom 2.5s;
 }
 
