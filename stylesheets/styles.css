@@ -460,13 +460,34 @@ a.button {
 
 }
 
-.left a:hover {
-  color: #ffffff;
-}
-
 .phase2,.phase3,.phase4,.phase5 {
   display: none;
 }
+
+/* rocket bg image */
+body.body-state2 .rocket{
+  background-image: url("../img/rocket-Flame.gif");
+}
+body.body-state3 .rocket,
+body.body-state4 .rocket{
+  background-image: url('rocket-launch.gif');
+}
+body.body-state5 .rocket{
+/*  background-image: url('../img/boom.png');*/
+  width: 209px;
+  height: 200px;
+  margin-left: -104.5px;
+}
+
+
+body.body-state1 .rocket{
+  transition: none;
+}
+body.body-state3 .rocket,
+body.body-state4 .rocket{
+  bottom: 1000px;
+}
+
 
 
 

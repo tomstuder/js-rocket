@@ -13,14 +13,14 @@ var boom = function () {
 
 // ROCKET LAUNCH PAGE --------------------------------------------
 
-var timer = null;
-var countdownNumber = 10;
+// var timer = null;
+// var countdownNumber = 10;
 
-var changeState = function (state) {
-  document.body.className = 'body-state'+state;
-  clearInterval(timer);
-  countdownNumber = 10;
-  document.getElementById('countdown').innerHTML = countdownNumber;
+// var changeState = function (state) {
+//   document.body.className = 'body-state'+state;
+//   clearInterval(timer);
+//   countdownNumber = 10;
+//   document.getElementById('countdown').innerHTML = countdownNumber;
 
 //   // countdown
 //   if (state == 2) {
