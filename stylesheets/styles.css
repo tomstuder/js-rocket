@@ -409,9 +409,9 @@ h3 {
   height: 125px;
   z-index: 2;
   position: absolute;
-  bottom: 25px;
+  bottom: -30px;
   margin-left: 45%;
-  background: url("../img/rocket.png") no-repeat 0 0;
+  background: url("../img/rocket-Flame.gif") no-repeat 0 0;
   transition: bottom 2.5s;
 }
 
