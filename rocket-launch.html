@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Js-rocket by tomstuder</title>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/full-launch.css">
+
+  </head>
+  <body class="body-state1 bodyfix">
+      <div class="container">
+          <div class="left2">
+            <div class="interface state1">
+              <h2>X5-JS MISSION</h2>
+              <a href="#" class="button" onclick="changeState(2);">Launch!</a>
+            </div>
+            <div class="interface state2">
+              <h2 id="countdown">10</h2>
+              <a href="#" class="button" onclick="changeState(1);">Abort!</a>
+            </div>
+            <div class="interface state3">
+              <h2>We Have Lift Off!</h2>
+            </div>
+            <div class="interface state4">
+              <h2>Success!!!</h2>
+              <a href="#" class="button" onclick="changeState(1);">RE-LAUNCH</a>
+            </div>
+            <div class="interface state5">
+              <h2>ERROR. We have a situation!</h2>
+              <a href="#" class="button" onclick="changeState(1);">RE-LAUNCH</a>
+            </div>
+          </div>
+          <div class="right2">
+            <div class="rocket2"></div>
+            <div class="ground2"></div>
+          </div>
+      </div>
+      <footer class="footer"><p>This project is maintained by <a href="https://github.com/tomstuder">tomstuder</a></p></footer>
+<!--     <script src="javascripts/scale.fix.js"></script> -->
+    <script src="javascripts/rocket.js"></script>
+    
+  </body>
+</html>

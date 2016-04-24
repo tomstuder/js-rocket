@@ -1,0 +1,87 @@
+/* FULL-LAUNCH JS-ROCKET ADJUSTMENTS*/
+
+body.bodyfix {
+  padding:0px;
+  margin: 0;
+}
+
+
+.container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.left2 {
+  box-sizing: border-box;
+  width: 50%;
+  /*  COLOR*/
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+21,b8bac6+49,dddfe3+80,f5f6f6+100;Grey+Pipe */
+  background: #f5f6f6; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  /*  STYLES*/
+  display: block;
+  float: left;
+/*  height: 55vh;*/
+  height:95vh;
+  border: solid 2px #000000;
+}
+
+.rocket2 {
+  width: 200px;
+  height: 250px;
+  z-index: 2;
+  position: absolute;
+  bottom: -35px;
+  margin-left: 45%;
+  background-image: url('../img/rocket-noFlame-lg.png');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  transition: bottom 6s;
+}
+
+.left2 h2 {
+  color: #000000;
+  margin-top: 100px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+}
+
+.ground2 {
+    background: url("../img/ground-lg.png") no-repeat 0 0;
+    position: absolute;
+    bottom:0;
+    display: block;
+    margin-bottom: 0;
+    left: 0;
+    height: 300px;
+    width: 100%;
+}
+
+.right2 {
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  width: 50%;
+  background: url("../img/space-lg.jpg") no-repeat 0 0;
+  background-size: 100%;
+  float: left;
+  height: 95vh;
+  position: relative;
+  border: solid 2px #000000;
+}
+
+
+.footer {
+  margin-left: 20px;
+  position: absolute;
+  bottom:0;
+}
+.footer p {
+  margin:0;
+  padding: 0;
+}
