@@ -13,7 +13,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="body-state1">
     <div class="wrapper">
       <header>
         <h1 class="title">Js-rocket</h1>
@@ -32,39 +32,29 @@
           <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ROCKET LAUNCH</h3>
 
           <div class="left">
-            <div class="phase1">
-              <p>:::::: Ready for Launch ::::::</p>
-              <a href="#" class="button" onclick="launch()">LAUNCH</a>
+            <div class="interface state1">
+              <h2>X5-JS MISSION</h2>
+              <a href="#" class="button" onclick="changeState(2);">Launch!</a>
             </div>
-            <div class="phase2" id="test">
-              <p>Timer <<span class="timer" id="timer">10</span></p>
-              <a href="#" class="button" onclick="abortlaunch()">ABORT LAUNCH!</a>
+            <div class="interface state2">
+              <h2 id="countdown">10</h2>
+              <a href="#" class="button" onclick="changeState(1);">Abort!</a>
             </div>
-            <div class="phase3">
-              <p>Success!</p>
-              <a href="#" class="button" onclick="relaunch()">RE-LAUNCH</a>
+            <div class="interface state3">
+              <h2>We Have Lift Off!</h2>
             </div>
-            <div class="phase4">
-              <p>ABORT</p>
-              <a href="#" class="button" onclick="abortlaunch()">ABORT LAUNCH</a>
+            <div class="interface state4">
+              <h2>Success!!!</h2>
+              <a href="#" class="button" onclick="changeState(1);">RE-LAUNCH</a>
             </div>
-            <div class="phase5">
-              <p>ERROR! LAUNCH FAILURE</p>
-              <a href="#" class="button" onclick="relaunch()">RE-LAUNCH</a>
+            <div class="interface state5">
+              <h2>ERROR. We have a situation!</h2>
+              <a href="#" class="button" onclick="changeState(1);">RE-LAUNCH</a>
             </div>
-
-
-
           </div>
           <div class="right">
-
-            <div class="rocket" id="rocket">
-              
-            </div>
-            <div class="ground">
-              
-            </div>
-            
+            <div class="rocket"></div>
+            <div class="ground"></div>
           </div>
 
 

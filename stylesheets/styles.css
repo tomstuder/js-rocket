@@ -351,6 +351,11 @@ footer {
   box-sizing: border-box;
 }
 
+.interface{
+  text-align: center;
+  padding: 20px;
+}
+
 .left {
   width: 50%;
   /*  COLOR*/
@@ -376,7 +381,7 @@ h3 {
   color: red;
 }
 
-.left p {
+.left h2 {
   color: #000000;
   margin-top: 20px;
   text-align: center;
@@ -410,15 +415,50 @@ h3 {
   height: 125px;
   z-index: 2;
   position: absolute;
-  bottom: -30px;
+  bottom: -35px;
   margin-left: 45%;
-  background: url("../img/rocket-Flame.gif") no-repeat 0 0;
-  transition: bottom 2.5s;
+  background-image: url('../img/rocket-noFlame.png');
+  transition: bottom 6s;
 }
 
-.rocket.launch {
-  bottom: 800px;
+/* rocket bg image */
+body.body-state2 .rocket{
+  background-image: url('../img/rocket-Flame.gif');
 }
+body.body-state3 .rocket,
+body.body-state4 .rocket{
+  background-image: url('../img/rocket-launch.gif');
+}
+body.body-state5 .rocket{
+  background: url('../img/boom.png') no-repeat 0 0;
+  width: 250px;
+  height: 250px;
+  margin-left: 25%;
+}
+
+
+body.body-state1 .rocket{
+  transition: none;
+}
+body.body-state3 .rocket,
+body.body-state4 .rocket{
+  bottom: 1000px;
+}
+
+.state1,
+.state2,
+.state3,
+.state4,
+.state5{
+  display: none;
+}
+
+body.body-state1 .state1{display: block;}
+body.body-state2 .state2{display: block;}
+body.body-state3 .state3{display: block;}
+body.body-state4 .state4{display: block;}
+body.body-state5 .state5{display: block;}
+
 
 a.button {
   display: block;
@@ -458,37 +498,5 @@ a.button {
   background: -webkit-linear-gradient(top,  #6b3360 0%,#db36a4 39%,#c146a1 66%,#6b3360 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #6b3360 0%,#db36a4 39%,#c146a1 66%,#6b3360 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b3360', endColorstr='#6b3360',GradientType=0 ); /* IE6-9 */
-
 }
-
-.phase2,.phase3,.phase4,.phase5 {
-  display: none;
-}
-
-/* rocket bg image */
-body.body-state2 .rocket{
-  background-image: url("../img/rocket-Flame.gif");
-}
-body.body-state3 .rocket,
-body.body-state4 .rocket{
-  background-image: url('rocket-launch.gif');
-}
-body.body-state5 .rocket{
-/*  background-image: url('../img/boom.png');*/
-  width: 209px;
-  height: 200px;
-  margin-left: -104.5px;
-}
-
-
-body.body-state1 .rocket{
-  transition: none;
-}
-body.body-state3 .rocket,
-body.body-state4 .rocket{
-  bottom: 1000px;
-}
-
-
-
 
