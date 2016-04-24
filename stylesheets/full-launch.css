@@ -67,13 +67,15 @@ body.bodyfix {
   display: block;
   overflow: hidden;
   width: 50%;
-  background: url("../img/space-lg.jpg") no-repeat 0 0;
-  background-size: 100%;
+  background: url("../img/space-lg.jpg") no-repeat;
+  background-size: cover;
+  background-clip: border-box;
   float: left;
   height: 95vh;
   position: relative;
   border: solid 2px #000000;
 }
+
 
 
 .footer {
