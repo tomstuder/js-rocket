@@ -386,6 +386,7 @@ h3 {
 
 .right {
   display: block;
+  overflow: hidden;
   width: 50%;
   background: url("../img/space.jpg") no-repeat 0 0;
   float: left;
